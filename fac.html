@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - MES GOLDEN JUBILEE COLLEGE KOTTAYAM</title>
+    <meta name="description" content="Explore the world-class facilities at MES Golden Jubilee College Kottayam">
+    <link rel="shortcut icon" href="images/log.jpg" type="image/x-icon" />
+<style>
+    /* Traditional Government/Institutional Website Theme */
+    :root {
+        --primary-color: #003366;
+        --secondary-color: #0066cc;
+        --accent-color: #f5f5f5;
+        --text-dark: #333333;
+        --text-light: #666666;
+        --text-muted: #999999;
+        --white: #ffffff;
+        --light-gray: #e5e5e5;
+        --border-color: #cccccc;
+        --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        --transition: all 0.2s ease;
+    }
+
+    /* Reset and Base Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-dark);
+        background: var(--white);
+    }
+
+    /* Utility Classes */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .text-center { text-align: center; }
+    .text-white { color: var(--white); }
+
+    /* Traditional Header */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        border-bottom: 2px solid var(--primary-color);
+        box-shadow: var(--shadow);
+        z-index: 1000;
+        height: 80px;
+    }
+
+    .header.scrolled {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        height: 80px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 0;
+    }
+
+    .nav-item {
+        position: relative;
+        border-right: 1px solid var(--border-color);
+    }
+
+    .nav-item:last-child {
+        border-right: none;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 20px 25px;
+        color: var(--text-dark);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: var(--transition);
+        border: 2px solid transparent;
+        background: var(--white);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--white);
+        background: var(--primary-color);
+        border-color: var(--secondary-color);
+    }
+
+    /* Dropdown Menu */
+    .dropdown-arrow {
+        margin-left: 8px;
+        font-size: 12px;
+        transition: var(--transition);
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--white);
+        min-width: 220px;
+        border: 2px solid var(--primary-color);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--transition);
+        z-index: 1001;
+    }
+
+    .nav-item:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 15px 20px;
+        color: var(--text-dark);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        transition: var(--transition);
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .dropdown-menu a:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-menu a:hover {
+        color: var(--white);
+        background: var(--primary-color);
+    }
+
+    /* Mobile Menu */
+    .mobile-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 8px;
+        border: 2px solid var(--primary-color);
+        background: var(--white);
+    }
+
+    .mobile-toggle span {
+        width: 25px;
+        height: 3px;
+        background: var(--primary-color);
+        margin: 3px 0;
+        transition: var(--transition);
+    }
+
+    .mobile-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    /* Main Content */
+    .main-content {
+        margin-top: 80px;
+        min-height: calc(100vh - 80px);
+    }
+
+    /* Page Header */
+    .page-header {
+        background: var(--primary-color);
+        color: var(--white);
+        padding: 60px 0;
+        text-align: center;
+        border-bottom: 4px solid var(--secondary-color);
+    }
+
+    .page-header-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .page-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+        opacity: 0.9;
+    }
+
+    /* Facilities Section */
+    .facilities-section {
+        padding: 60px 0;
+        background: var(--white);
+    }
+
+    .facilities-grid {
+        display: grid;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .facility-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+        background: var(--white);
+        border: 2px solid var(--border-color);
+        padding: 40px;
+        transition: var(--transition);
+    }
+
+    .facility-item:hover {
+        border-color: var(--primary-color);
+        box-shadow: var(--shadow);
+    }
+
+    .facility-item:nth-child(even) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .facility-item:nth-child(even) .facility-content {
+        order: 2;
+    }
+
+    .facility-item:nth-child(even) .facility-image {
+        order: 1;
+    }
+
+    .facility-image {
+        border: 2px solid var(--border-color);
+        overflow: hidden;
+        transition: var(--transition);
+    }
+
+    .facility-image:hover {
+        border-color: var(--primary-color);
+    }
+
+    .facility-image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .facility-content {
+        padding: 20px 0;
+    }
+
+    .facility-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 3px solid var(--secondary-color);
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .facility-description {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: var(--text-dark);
+        margin-bottom: 25px;
+        text-align: justify;
+    }
+
+    .facility-features {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .facility-features li {
+        padding: 8px 0;
+        color: var(--text-dark);
+        position: relative;
+        padding-left: 25px;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .facility-features li:last-child {
+        border-bottom: none;
+    }
+
+    .facility-features li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .facility-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 20px;
+        background: var(--accent-color);
+        border: 2px solid var(--primary-color);
+        transition: var(--transition);
+    }
+
+    .stat-item:hover {
+        background: var(--primary-color);
+        color: var(--white);
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 5px;
+        color: var(--primary-color);
+    }
+
+    .stat-item:hover .stat-number {
+        color: var(--white);
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    /* Additional Facilities */
+    .additional-facilities {
+        background: var(--accent-color);
+        padding: 60px 0;
+        border-top: 4px solid var(--primary-color);
+    }
+
+    .additional-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .additional-facility {
+        background: var(--white);
+        padding: 30px;
+        text-align: center;
+        border: 2px solid var(--border-color);
+        transition: var(--transition);
+    }
+
+    .additional-facility:hover {
+        border-color: var(--primary-color);
+        box-shadow: var(--shadow);
+    }
+
+    .additional-facility h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid var(--secondary-color);
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+
+    .additional-facility p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--text-dark);
+    }
+
+    /* Section Title */
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        text-align: center;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 4px solid var(--secondary-color);
+        padding-bottom: 15px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: var(--text-light);
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .mobile-toggle {
+            display: flex;
+        }
+
+        .nav-menu {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: var(--white);
+            flex-direction: column;
+            padding: 20px;
+            transform: translateX(-100%);
+            transition: var(--transition);
+            border-right: 2px solid var(--primary-color);
+        }
+
+        .nav-menu.active {
+            transform: translateX(0);
+        }
+
+        .nav-item {
+            border-right: none;
+            border-bottom: 1px solid var(--border-color);
+            width: 100%;
+        }
+
+        .nav-item:last-child {
+            border-bottom: none;
+        }
+
+        .nav-link {
+            width: 100%;
+            justify-content: space-between;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+
+        .dropdown-menu {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin-top: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .nav-item.mobile-dropdown-open .dropdown-menu {
+            max-height: 300px;
+        }
+
+        .page-title {
+            font-size: 2rem;
+        }
+
+        .facility-item {
+            grid-template-columns: 1fr;
+            gap: 25px;
+            padding: 25px;
+        }
+
+        .facility-item:nth-child(even) {
+            grid-template-columns: 1fr;
+        }
+
+        .facility-item:nth-child(even) .facility-content,
+        .facility-item:nth-child(even) .facility-image {
+            order: unset;
+        }
+
+        .facility-title {
+            font-size: 1.5rem;
+        }
+
+        .additional-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .facility-stats {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .page-title {
+            font-size: 1.8rem;
+        }
+
+        .facility-item {
+            padding: 20px;
+        }
+
+        .facility-title {
+            font-size: 1.3rem;
+        }
+
+        .facility-description {
+            font-size: 1rem;
+        }
+
+        .additional-facility {
+            padding: 20px;
+        }
+
+        .facility-stats {
+            grid-template-columns: 1fr;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* Print Styles */
+    @media print {
+        .header,
+        .mobile-toggle {
+            display: none;
+        }
+
+        .main-content {
+            margin-top: 0;
+        }
+
+        .page-header {
+            background: var(--white);
+            color: var(--text-dark);
+            border: 2px solid var(--text-dark);
+        }
+
+        .facility-item,
+        .additional-facility {
+            border: 1px solid var(--text-dark);
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        .facility-title,
+        .section-title {
+            color: var(--text-dark);
+        }
+    }
+</style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <img src="images/log.jpg" alt="MES College Logo">
+                </a>
+                
+                <nav class="nav-menu" id="navMenu">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#about" class="nav-link">
+                            About Us
+                            <span class="dropdown-arrow">▼</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="mgmnt.html">Management</a>
+                            <a href="index.html#principal">Principal</a>
+                            <a href="index.html#vision">Vision & Mission</a>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a href="department.html" class="nav-link">Department</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="fac.html" class="nav-link active">Facilities</a>
+                    </div>
+                    <div class="nav-item">
+                            <a href="gallery.html" class="nav-link">Gallery</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                </nav>
+                
+                <div class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">College Facilities</h1>
+                    <p class="page-subtitle">World-class infrastructure for excellence in education</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Facilities Section -->
+        <section class="facilities-section">
+            <div class="container">
+                <div class="facilities-grid">
+                    <!-- Classrooms -->
+                    <div class="facility-item">
+                        <div class="facility-image">
+                            <img src="images/classroom.png" alt="Modern Classrooms">
+                        </div>
+                        <div class="facility-content">
+                            <h2 class="facility-title">Class Rooms</h2>
+                            <p class="facility-description">
+                                The classrooms are spacious and facilitates long hours of learning and interactions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Computer Lab & Smart Room -->
+                    <div class="facility-item">
+                        <div class="facility-image">
+                            <img src="images/computer-lab.png" alt="Computer Lab">
+                        </div>
+                        <div class="facility-content">
+                            <h2 class="facility-title">Computer Lab & Smart Room</h2>
+                            <p class="facility-description">
+                                MES College has well-furnished IT Lab & Smart Room with modern equipped Computers, LCD Projectors, Smart TV installed with latest version of software's. 200 Mbps of internet connectivity is available and secured Wi-Fi facility enabled anywhere in campus. Students can use the Computer Lab and resources including printers, scanners, and projectors on all working days.
+                            </p>
+                            <ul class="facility-features">
+                                <li>Modern computers with latest software</li>
+                                <li>200 Mbps high-speed internet</li>
+                                <li>Campus-wide Wi-Fi connectivity</li>
+                                <li>LCD projectors and Smart TVs</li> 
+                                <li>Open access on all working days</li>
+                            </ul>
+                            <div class="facility-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">200</span>
+                                    <span class="stat-label">Mbps Speed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Library -->
+                    <div class="facility-item">
+                        <div class="facility-image">
+                            <img src="images/library.png" alt="College Library">
+                        </div>
+                        <div class="facility-content">
+                            <h2 class="facility-title">Library</h2>
+                            <p class="facility-description">
+                                Our Library provide students with access to a vast repository of resources, including books and Journals. In any academic institution Library plays an important role in the dissemination of knowledge. In fact, the ambiance of the library reflects the quality of the education imparted by the College. The user community of the library includes students, faculty members and administrative staff's of the institution. Library is having a collection of more than 5000 books.
+                            </p>
+                            <ul class="facility-features">
+                                <li>Over 5000 books collection</li>
+                            </ul>
+                            <div class="facility-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">5000+</span>
+                                    <span class="stat-label">Books</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facilities -->
+        <section class="additional-facilities">
+            <div class="container">
+                <h2 class="section-title">Additional Facilities</h2>
+                <p class="section-subtitle">Supporting services for a complete educational experience</p>
+                
+                <div class="additional-grid">
+                    <div class="additional-facility"> 
+                        <h3>Counseling Centre</h3>
+                        <p>
+                            Counselling Centre functions to solve the personal and social problems faced by the students.
+                        </p>
+                    </div>
+
+                    <div class="additional-facility"> 
+                        <h3>College Bus Facility</h3>
+                        <p>
+                            College Bus available from Kottayam and Changanacherry.
+                        </p>
+                    </div>
+
+                    <div class="additional-facility"> 
+                        <h3>College Canteen</h3>
+                        <p>
+                            Our college providing canteen facility to the students. Tea, Coffee, cool drinks, snacks available in the canteen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Traditional Government Website JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            if (mobileToggle && navMenu) {
+                mobileToggle.addEventListener('click', () => {
+                    mobileToggle.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+
+            // Mobile dropdown functionality
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                const link = item.querySelector('.nav-link');
+                const dropdown = item.querySelector('.dropdown-menu');
+                
+                if (link && dropdown) {
+                    link.addEventListener('click', (e) => {
+                        if (window.innerWidth <= 768) {
+                            e.preventDefault();
+                            item.classList.toggle('mobile-dropdown-open');
+                        }
+                    });
+                }
+            });
+
+            // Simple fade-in animation for facility items
+            const facilityItems = document.querySelectorAll('.facility-item, .additional-facility');
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            facilityItems.forEach(item => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+</html>
